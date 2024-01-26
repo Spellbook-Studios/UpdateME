@@ -23,8 +23,9 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 
-    // A dependency of midnightlib used to for testing only
+    // Midnightlib for testing
     modLocalRuntime "net.fabricmc.fabric-api:fabric-api:${project.local_fabric_apiversion}"
+    modLocalRuntime "maven.modrinth:midnightlib:${project.midnightlib_version_fabric}"
 }
 
 processResources {

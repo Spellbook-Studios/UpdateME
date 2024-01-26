@@ -1,15 +1,23 @@
 package dk.sebsa.updateme.forge;
 
-import dev.architectury.platform.forge.EventBuses;
-import dk.sebsa.updateme.UpdateME;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import dk.sebsa.updateme.UpdateMEClient;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod(UpdateME_.MOD_ID)
+import static dk.sebsa.updateme.forge.UpdateMEForge.MOD_ID;
+
+@Mod(MOD_ID)
 public class UpdateMEForge {
-    public UpdateME_Forge() {
-		// Submit our event bus to let architectury register our content on the right time
-        EventBuses.registerModEventBus(UpdateME_.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        UpdateME_.init();
+    public static final String MOD_ID = "updateme";
+
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event)  {
+            UpdateMEClient.init();
+        }
     }
 }

@@ -34,7 +34,7 @@ public class UpdateMEScreen extends Screen {
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-        this.renderBackground(guiGraphics);
+        this.renderBackground(guiGraphics, mouseX, mouseY, partialTick);
         guiGraphics.drawCenteredString(this.font, Component.translatable("updateme.screen.title"), width / 2, 20, 0xff0000);
         guiGraphics.drawCenteredString(this.font, Component.translatable("updateme.screen.description"), width / 2, 20+10, 0xffffff);
         guiGraphics.drawCenteredString(this.font, Component.translatable("updateme.screen.version_notice", UpdateMEClient.currVer, UpdateMEClient.newVer), width / 2, 20+20, 0xffffff);
