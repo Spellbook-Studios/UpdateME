@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "updateme",
+  "version": "${version}",
+
+  "name": "Update ME!",
+  "description": "Informs the player when your modpack needs an update",
+  "authors": [],
+  "contact": {},
+
+  "license": "Unlicense",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dk.sebsa.updateme.fabric.UpdateMEClientFabric"
+    ]
+  },
+  "mixins": [
+    "updateme.mixins.json",
+    "updateme-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.6",
+    "minecraft": ">=1.20.1"
+  }
+}

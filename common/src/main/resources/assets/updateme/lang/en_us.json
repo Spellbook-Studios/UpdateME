@@ -1,0 +1,10 @@
+{
+  "updateme.midnightconfig.title": "UpdateME Config",
+  "updateme.midnightconfig.versionStringComment": "The version of the modpack, this is the version that is used to compare against the newest version",
+  "updateme.midnightconfig.versionString": "Modpack Version",
+  "updateme.midnightconfig.newestVersionUrlComment": "If not empty or \"NONE\", this is the version that is considered the newest version\nMust be a direct link to a text file e.g.\nhttps://raw.githubusercontent.com/Spellbook-Studios/Modpacks/main/Wynntills%20Ultimate/version-text/VERSION",
+  "updateme.midnightconfig.newestVersionUrl": "URL to file containing newest version",
+  "updateme.screen.title": "It is time to update this modpack",
+  "updateme.screen.description": "You're running an outdated version of this modpack",
+  "updateme.screen.version_notice": "Please consider updating from %s to %s"
+}
