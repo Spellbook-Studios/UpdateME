@@ -1,7 +1,6 @@
 name: Gradle Build
 
 on:
-  pull_request:
   push:
 
 jobs:
@@ -26,15 +25,6 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build Fabric
-        run: ./gradlew clean :fabric:remapJar
-      - name: Build NeoForge
-        run: ./gradlew :neoforge:remapJar
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Mod Files
-          path: |
-            fabric/build/libs/**.jar
-            !fabric/build/libs/**-shadow.jar
-            neoforge/build/libs/**.jar
-            !neoforge/build/libs/**-shadow.jar
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+        run: ./gradlew clean :fabric:modrinth :neoforge:modrinth :neoforge:modrinthSyncBody
