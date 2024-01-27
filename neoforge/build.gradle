@@ -75,7 +75,7 @@ components.java {
 modrinth {
     token = System.getenv("MODRINTH_TOKEN") // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
     projectId = "9xIIYjBA" // This can be the project ID or the slug. Either will work!
-    versionNumber =  "${project.mod_version}-neoforge" // You don't need to set this manually. Will fail if Modrinth has this version already
+    versionNumber =  "${project.mod_version}-20.4-neoforge" // You don't need to set this manually. Will fail if Modrinth has this version already
     versionName = "Update ME! ${project.mod_version} - [NeoForge] (${project.minecraft_version})"
     versionType = "release" // This is the default -- can also be `beta` or `alpha`
     uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
