@@ -28,6 +28,8 @@ dependencies {
     modLocalRuntime "maven.modrinth:midnightlib:${project.midnightlib_version_fabric}"
 }
 
+archivesBaseName = rootProject.archives_base_name + "-fabric"
+
 processResources {
     inputs.property "version", project.version
 

@@ -26,6 +26,8 @@ dependencies {
     modLocalRuntime "maven.modrinth:midnightlib:${project.midnightlib_version_neoforge}"
 }
 
+archivesBaseName = rootProject.archives_base_name + "-neoforge"
+
 processResources {
     var replaceProperties = [
             minecraft_version   : minecraft_version, minecraft_version_range: minecraft_version_range,
