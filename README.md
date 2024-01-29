@@ -13,7 +13,7 @@ Informs the player when your modpack needs an update
 
 ### Screenshots
 Example:
-![Screen asking the player to update](https://web-static.sebsa.dk/upload/e/w6dx749.png)
+![Screen asking the player to update](https://web-static.sebsa.dk/upload/e/y0fls6c.png)
 
 ### Using this
 You are allowed to use this in any personal modpack,
