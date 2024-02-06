@@ -1,0 +1,10 @@
+{
+  "updateme.midnightconfig.title": "UpdateME 配置",
+  "updateme.midnightconfig.versionStringComment": "整合包的版本，用于与最新版本进行比较",
+  "updateme.midnightconfig.versionString": "整合包的版本",
+  "updateme.midnightconfig.newestVersionUrlComment": "如果不为空或\"NONE\"，则该版本被视为最新版本\n必须是指向文本文件的直链，例如：\nhttps://raw.githubusercontent.com/Spellbook-Studios/Modpacks/main/Wynntills%20Ultimate/version-text/VERSION",
+  "updateme.midnightconfig.newestVersionUrl": "包含最新版本文件的链接",
+  "updateme.screen.title": "是时候更新这个整合包了",
+  "updateme.screen.description": "你运行的是这个整合包的过时版本",
+  "updateme.screen.version_notice": "请考虑从 %s 升级到 %s"
+}
